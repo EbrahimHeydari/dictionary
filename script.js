@@ -36,7 +36,7 @@ const showResult = event => {
     .then(results => {
       output.innerHTML = null
       output.innerHTML += `
-        <h1>Search resuls for ${results[0].word}</h1>
+        <h1>Results for ${results[0].word}</h1>
         <div class="mean"></div>`
       showPhonetics(results[0].phonetics)
       showMeanings(results[0].meanings)
@@ -48,7 +48,9 @@ const showResult = event => {
         duration: 3000,
         close: true,
         stopOnFocus: true,
-        style: { background: 'linear-gradient(crimson, orangered )' }
+        style: {
+          background: 'linear-gradient(rgba(3, 168, 244, .95), rgb(33, 150, 243, .95))'
+        }
       }).showToast()
     })
 

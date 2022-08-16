@@ -103,6 +103,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .photentic__text {
@@ -110,9 +111,17 @@ body {
   font-size: 24px;
 }
 
+.photentic__audio {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 576px) {
   .form__box {
     width: 400px;
+  }
+
+  .photentic__audio {
+    margin-top: 0;
   }
 }
 
@@ -120,5 +129,15 @@ body {
   .form__box {
     width: 600px;
     height: 60px;
+  }
+
+  .output {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) { 
+  .output {
+    font-size: 24px;
   }
 }
