@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: #acf1fa url('images/cover.jpg') center fixed;
+  background: #acf1fa url('/image/cover.jpg') center fixed;
   background-size: cover;
   background-blend-mode: multiply;
 }
@@ -136,7 +136,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1025px) { 
+@media screen and (min-width: 1025px) {
   .output {
     font-size: 24px;
   }
